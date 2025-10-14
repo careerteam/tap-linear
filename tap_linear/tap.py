@@ -20,7 +20,8 @@ class TapLinear(Tap):
             "auth_token",
             th.StringType,
             required=True,
-            description="The token to authenticate against the API service",
+            secret=True,
+            description="The API token to authenticate against the API service",
         ),
         th.Property(
             "api_url",
