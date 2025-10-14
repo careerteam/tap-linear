@@ -1,0 +1,21 @@
+version: 1
+plugins:
+  extractors:
+  - name: tap-linear
+    namespace: tap_linear
+    pip_url: git+https://github.com/renesteeman/tap-linear.git
+    executable: tap-linear
+    description: Singer tap for Linear, built with the Meltano SDK
+    capabilities:
+    - catalog
+    - discover
+    - state
+    settings:
+    - name: auth_token
+      kind: password
+      label: Authentication Token
+      description: Linear API authentication token
+    - name: start_date
+      kind: date_iso8601
+      label: Start Date
+      description: The earliest record date to sync
