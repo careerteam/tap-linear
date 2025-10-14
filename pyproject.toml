@@ -14,6 +14,7 @@ python = ">=3.10,<3.13"
 requests = "^2.32"
 black = "^25.0"
 singer-sdk = "^0.50.2"
+ruff = "^0.14.0"
 
 [tool.isort]
 profile = "black"
