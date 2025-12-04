@@ -13,7 +13,23 @@ query Issues($next: String, $replicationKeyValue: DateTimeOrDuration) {
             id
             title
             url
+
             updatedAt
+            archivedAt
+            autoArchivedAt
+            autoClosedAt
+            canceledAt
+            completedAt
+            createdAt
+            startedAt
+            startedTriageAt
+            triagedAt
+
+            estimate
+            priority
+            priorityLabel
+            dueDate
+
             creator {
                 id
                 name
@@ -24,6 +40,7 @@ query Issues($next: String, $replicationKeyValue: DateTimeOrDuration) {
                 name
                 email
             }
+
             project {
                 id
                 name
