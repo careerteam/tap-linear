@@ -22,6 +22,15 @@ issuesSchema = th.PropertiesList(
     th.Property("dueDate", th.DateType),
 
     th.Property(
+        "state",
+        th.ObjectType(
+            th.Property("id", th.StringType),
+            th.Property("name", th.StringType),
+            th.Property("type", th.StringType),
+        ),
+    ),
+
+    th.Property(
         "creator",
         th.ObjectType(
             th.Property("id", th.StringType),

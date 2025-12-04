@@ -31,6 +31,12 @@ query Issues($next: String, $replicationKeyValue: DateTimeOrDuration) {
             priorityLabel
             dueDate
 
+            state {
+                id
+                name
+                type
+            }
+
             creator {
                 id
                 name
