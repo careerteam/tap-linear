@@ -12,6 +12,7 @@ query Issues($next: String, $replicationKeyValue: DateTimeOrDuration) {
         nodes {
             id
             title
+            description
             url
 
             updatedAt
